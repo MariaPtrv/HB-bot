@@ -32,15 +32,17 @@ func main() {
 	abortOnError(err)
 	bot := bot.NewBot(client)
 	offset := int64(0)
+
 	for {
 		updates, err := bot.GetUpdates(offset)
 		abortOnError(err)
 		for _, update := range updates {
-			text := update.Message.Text
-			userFirstName := update.Message.From.FirstName
-			userId := update.Message.Chat.ID
-			response := "Hi " + userFirstName + "! You wrote: " + text
-			bot.SendMessage(userId, response)
+			// text := update.Message.Text
+			// userFirstName := update.Message.From.FirstName
+			// userId := update.Message.Chat.ID
+			// response := "Hi " + userFirstName + "! You wrote: " + text
+			// bot.SendMessage(userId, response)
+			bot.ProcessUpdate(update)
 			offset = update.ID + 1
 		}
 	}
