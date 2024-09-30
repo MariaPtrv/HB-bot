@@ -19,7 +19,8 @@
 
 В конце именниник получает подарочный сертификат в виде фото.
 
-![image](https://github.com/user-attachments/assets/915c1681-28c9-476b-92e0-01bbfba40273)
+![image](https://github.com/user-attachments/assets/0b4df430-bf62-4727-8d9b-f90476c41d58)
+
 
 
 
